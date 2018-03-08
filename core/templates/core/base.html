@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <title>{% block title %} | JobScraper{% endblock %}</title>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+        <link rel="stylesheet" href="{% static "core/css/main.css" %}">
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div class="uk-container">
+            {% block content %}
+
+            {% endblock %}
+            <div class="footer">
+                <h5 class="uk-heading">Designed by Erick Mwazonga</h5>
+            </div>
+        </div>
+    </body>
+</html>

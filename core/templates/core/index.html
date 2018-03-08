@@ -1,0 +1,30 @@
+<!-- a list of brands -->
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %} BrighterMonday{{ block.super }}{% endblock title %}
+
+{% block content %}
+    <div class="">
+        <h1 class="uk-heading-divider">Welcome to the Job Scraper</h1>
+    </div>
+    <div class="uk-flex uk-flex-center@s">
+        <div>
+            <a href="{% url 'core:scrape' %}">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">BrighterMonday</h3>
+                    <p>Scrape Brighter Monday to get Latest Jobs</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="{% url 'core:api' %}">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-margin-left">
+                    <h3 class="uk-card-title">API</h3>
+                    <p>Get an API for the latest Brighter Monday Latest Jobs</p>
+                </div>
+            </a>
+        </div>
+    </div>
+{% endblock %}
