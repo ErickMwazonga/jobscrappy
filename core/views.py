@@ -8,7 +8,7 @@ import requests
 from django.views.generic import ListView, TemplateView
 from django.shortcuts import render
 
-from models import ScrapedJob
+from .models import ScrapedJob
 
 # Create your views here.
 def scrape():

@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-from models import ScrapedJob
+from .models import ScrapedJob
 
 # Register your models here.
 @admin.register(ScrapedJob)

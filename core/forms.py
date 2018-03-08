@@ -9,7 +9,7 @@ from .models import ScrapedJob
 
 class JobSearchForm(forms.Form):
     collector_name = forms.ModelChoiceField(
-        queryset=Brand.objects.values_list('collector_name', flat=True),
+        queryset=ScrapedJob.objects.values_list('collector_name', flat=True),
         empty_label="Choose a Collector"
     )
 
